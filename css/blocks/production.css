@@ -1,0 +1,29 @@
+.production {
+	min-height: 796px;
+	margin: 72px 0;
+}
+.production-steps {
+	display: flex;
+	margin-bottom: 32px;
+}
+.production-step:not(:last-child) {
+	min-width: 697px;
+}
+.production-step > p {
+	font-weight: 400;
+	font-family: 'Roboto';
+	font-size: 20px;
+}
+.production-step + .production-step {
+	margin-left: 24px;
+}
+.production-step > img {
+	padding: 36px 0 16px 0;
+}
+.production-step > h4 {
+	max-width: 456px;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-family: 'Roboto';
+	font-size: 24px;
+}

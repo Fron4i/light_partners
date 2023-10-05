@@ -1,0 +1,41 @@
+.projects {
+	margin: 72px 0;
+	height: 495px;
+}
+.projects-header {
+	font-family: 'Roboto Condensed';
+	font-weight: 700;
+	font-size: 48px;
+	text-transform: uppercase;
+	padding-bottom: 48px;
+}
+.projects-steps {
+	display: flex;
+}
+.projects-step > h4{
+	text-transform: uppercase;
+	padding-top: 16px;
+	font-weight: 400;
+	font-family: 'Roboto';
+	font-size: 24px;
+}
+.projects-step + .projects-step {
+	margin-left: 24px;
+	margin-bottom: 32px;
+}
+.projects-more {
+	display: flex;
+}
+.more {
+	font-family: 'Roboto';
+	font-weight: 700;
+	font-size: 14px;
+	display: flex;
+	margin-left: auto; 
+	margin-right: 0;
+	text-transform: uppercase;
+}
+.more > img {
+	margin-top: -1px;
+	padding-left: 8px;
+}
