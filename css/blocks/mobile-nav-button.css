@@ -11,13 +11,19 @@
 	height: 16px;
 	justify-content: center;
 	align-items: center;
-	transition: all 0.5s ease;
+}
+.mobil {
+	display: none;
 }
 
 @media (max-width: 1080px) {
+	.mobil {
+		display: flex;
+		margin-right: 16px;
+	}
 	.mobile-nav-button {
 		display: flex;
-		width: 33%;
+		width: 25px;
 		justify-content: end;
 	}
 }
