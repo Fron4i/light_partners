@@ -10,5 +10,5 @@ mobileNabButton.addEventListener('click', function () {
 		mobileNabIcon.src = './img/burger.svg'
 	} else {
 		mobileNabIcon.src = "./img/close-burger.svg"
-	}
+	}	
 })
