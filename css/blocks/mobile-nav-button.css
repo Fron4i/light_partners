@@ -12,11 +12,18 @@
 	justify-content: center;
 	align-items: center;
 }
+.mobil {
+	display: none;
+}
 
 @media (max-width: 1080px) {
+	.mobil {
+		display: flex;
+		margin-right: 16px;
+	}
 	.mobile-nav-button {
 		display: flex;
-		width: 33%;
+		width: 25px;
 		justify-content: end;
 	}
 }

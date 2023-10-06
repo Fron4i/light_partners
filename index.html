@@ -14,8 +14,9 @@
 		<link rel="stylesheet" href="./css/blocks/footer.css" />
 		<link rel="stylesheet" href="./css/blocks/mobile-nav-button.css" />
 		<link rel="stylesheet" href="./css/blocks/mobile-nav.css" />
+		<link rel="stylesheet" href="./css/blocks/burger-mobile.css" />
 		<script src="./js/app.js" defer></script>
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 		<link
 			rel="stylesheet"
 			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap"
@@ -29,15 +30,20 @@
 		<header class="header">
 			<div class="container">
 				<div class="header-row">
-					<button type="button" class="mobile-nav-button">
-						<img
-							class="mobile-nav-button__icon"
-							width="24"
-							height="16"
-							src="./img/burger.svg"
-						/>
-						<!-- <span class="mobile-nav-button__icon"></span> -->
-					</button>
+					<div class="nav-2-step">
+						<button class="btn black-style mobil">
+							<img src="./img/black-style.svg" />
+						</button>
+						<button type="button" class="mobile-nav-button">
+							<div class="mobile-nav-button__icon" id="nav-icon3">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<!-- <span class="mobile-nav-button__icon"></span> -->
+						</button>
+					</div>
 					<div class="header-logo">
 						<img src="./img/logo-head.jpg" />
 					</div>
@@ -63,8 +69,8 @@
 								<img src="./img/whatsapp.jpg" />
 								<span>whatsapp</span>
 							</li>
-							<li>+7 (495) 445-34-10</li>
-							<li>order@lightpartners.ru</li>
+							<li class="small-text">+7 (495) 445-34-10</li>
+							<li class="small-text">order@lightpartners.ru</li>
 						</ul>
 					</nav>
 				</div>
@@ -72,19 +78,33 @@
 		</header>
 
 		<div class="mobile-nav">
-			<img class="mobile-nav-logo" src="./img/logo.svg" />
-			<nav class="mobile-nav-list">
+			<div class="mobile-row">
+				<nav class="mobile-connection">
+					<ul>
+						<li>
+							<img src="./img/whatsapp.jpg" />
+							<span>whatsapp</span>
+						</li>
+						<li class="small-text">+7 (495) 445-34-10</li>
+						<li class="small-text">order@lightpartners.ru</li>
+					</ul>
+				</nav>
+				<div class="mobile-logo">
+					<img src="./img/logo-head.jpg" />
+				</div>
+				<div class="w3"></div>
+			</div>
+			<nav class="mobile-nav-nav">
 				<ul>
-					<li><a href="#">Why Alivio</a></li>
-					<li><a href="#">Solutions</a></li>
-					<li><a href="#">Community</a></li>
-					<li><a href="#">Pricing</a></li>
+					<li><a href="#">о компании</a></li>
+					<li><a href="#">проекты</a></li>
+					<li><a href="#">производство</a></li>
+					<li><a href="#">дистрибьюция</a></li>
+					<li><a href="#">услуги</a></li>
+					<li><a href="#">каталог</a></li>
+					<li><a href="#">контакты</a></li>
 				</ul>
 			</nav>
-			<div class="mobile-login">
-				<a href="#" class="mobile-login-link">Sign in</a>
-				<a href="#" class="btn btn-big">Start Trial</a>
-			</div>
 		</div>
 
 		<main>
