@@ -13,6 +13,8 @@
 		<link rel="stylesheet" href="./css/blocks/production.css" />
 		<link rel="stylesheet" href="./css/blocks/footer.css" />
 		<link rel="stylesheet" href="./css/blocks/mobile-nav-button.css" />
+		<link rel="stylesheet" href="./css/blocks/mobile-nav.css" />
+		<script src="./js/app.js" defer></script>
 
 		<link
 			rel="stylesheet"
@@ -24,11 +26,17 @@
 		/>
 	</head>
 	<body>
-		<header class="header ">
+		<header class="header">
 			<div class="container">
 				<div class="header-row">
 					<button type="button" class="mobile-nav-button">
-						<span class="mobile-nav-button__icon"></span>
+						<img
+							class="mobile-nav-button__icon"
+							width="24"
+							height="16"
+							src="./img/burger.svg"
+						/>
+						<!-- <span class="mobile-nav-button__icon"></span> -->
 					</button>
 					<div class="header-logo">
 						<img src="./img/logo-head.jpg" />
@@ -63,6 +71,22 @@
 			</div>
 		</header>
 
+		<div class="mobile-nav">
+			<img class="mobile-nav-logo" src="./img/logo.svg" />
+			<nav class="mobile-nav-list">
+				<ul>
+					<li><a href="#">Why Alivio</a></li>
+					<li><a href="#">Solutions</a></li>
+					<li><a href="#">Community</a></li>
+					<li><a href="#">Pricing</a></li>
+				</ul>
+			</nav>
+			<div class="mobile-login">
+				<a href="#" class="mobile-login-link">Sign in</a>
+				<a href="#" class="btn btn-big">Start Trial</a>
+			</div>
+		</div>
+
 		<main>
 			<section class="home none">
 				<div class="container">
@@ -79,8 +103,16 @@
 						</div>
 						<div class="home-img-wrapper">
 							<ul>
-								<li><img class="home-img" src="./img/graph1.jpg" /></li>
-								<li><img class="home-img" src="./img/graph2.jpg""></li>
+								<li>
+									<img
+										class="home-img"
+										src="./img/graph1.jpg"
+									/>
+								</li>
+								<li>
+									<img class="home-img"
+									src="./img/graph2.jpg"">
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -99,10 +131,10 @@
 							<h4>офис rambler</h4>
 						</div>
 						<div class="projects-step">
-							<img class="projects-img"  src="./img/step2.jpg" />
+							<img class="projects-img" src="./img/step2.jpg" />
 							<h4>ресторан днк</h4>
 						</div>
-						<div  class="projects-step">
+						<div class="projects-step">
 							<img class="projects-img" src="./img/step3.jpg" />
 							<h4>жк “золотые ключи”</h4>
 						</div>
