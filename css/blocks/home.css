@@ -29,10 +29,14 @@
 	font-size: 14px;
 	color: #fff;
 }
-.home-img {
+.home-img-wrapper {
 	padding-left: 181px;
 }
-.home-img > ul > li + li {
+.home-img {
+	min-width: 456px;
+	min-height: 213px;
+}
+.home-img-wrapper > ul > li + li {
 	margin-top: 30px;
 }
 .home-bg-img {
@@ -48,4 +52,14 @@
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
+}
+
+@media (max-width: 1339px) {
+
+}
+@media (max-width: 766px) {
+	
+}
+@media (max-width: 374px) {
+	
 }

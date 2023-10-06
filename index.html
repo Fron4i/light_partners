@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="./css/blocks/company.css" />
 		<link rel="stylesheet" href="./css/blocks/production.css" />
 		<link rel="stylesheet" href="./css/blocks/footer.css" />
+		<link rel="stylesheet" href="./css/blocks/mobile-nav-button.css" />
 
 		<link
 			rel="stylesheet"
@@ -23,10 +24,13 @@
 		/>
 	</head>
 	<body>
-		<header class="header">
+		<header class="header ">
 			<div class="container">
 				<div class="header-row">
-					<div class="header-log">
+					<button type="button" class="mobile-nav-button">
+						<span class="mobile-nav-button__icon"></span>
+					</button>
+					<div class="header-logo">
 						<img src="./img/logo-head.jpg" />
 					</div>
 					<nav class="header-nav">
@@ -60,7 +64,7 @@
 		</header>
 
 		<main>
-			<section class="home">
+			<section class="home none">
 				<div class="container">
 					<div class="home-row">
 						<div class="home-content">
@@ -73,10 +77,10 @@
 								</button>
 							</div>
 						</div>
-						<div class="home-img">
+						<div class="home-img-wrapper">
 							<ul>
-								<li><img src="./img/graph1.jpg" /></li>
-								<li><img src="./img/graph2.jpg""></li>
+								<li><img class="home-img" src="./img/graph1.jpg" /></li>
+								<li><img class="home-img" src="./img/graph2.jpg""></li>
 							</ul>
 						</div>
 					</div>
@@ -86,20 +90,20 @@
 				</div>
 			</section>
 
-			<section class="projects">
+			<section class="projects none">
 				<div class="container">
 					<h2 class="projects-header">Проекты</h2>
 					<div class="projects-steps">
 						<div class="projects-step">
-							<img src="./img/step1.jpg" />
+							<img class="projects-img" src="./img/step1.jpg" />
 							<h4>офис rambler</h4>
 						</div>
 						<div class="projects-step">
-							<img src="./img/step2.jpg" />
+							<img class="projects-img"  src="./img/step2.jpg" />
 							<h4>ресторан днк</h4>
 						</div>
-						<div class="projects-step">
-							<img src="./img/step3.jpg" />
+						<div  class="projects-step">
+							<img class="projects-img" src="./img/step3.jpg" />
 							<h4>жк “золотые ключи”</h4>
 						</div>
 					</div>
@@ -112,7 +116,7 @@
 				</div>
 			</section>
 
-			<section class="company">
+			<section class="company none">
 				<div class="container">
 					<h2 class="company-header">о компании</h2>
 					<div class="company-steps">
@@ -174,7 +178,7 @@
 				</div>
 			</section>
 
-			<section class="production">
+			<section class="production none">
 				<div class="container">
 					<h2 class="company-header">о компании</h2>
 					<div class="production-steps">
@@ -247,7 +251,7 @@
 			</section>
 		</main>
 
-		<footer class="footer">
+		<footer class="footer none">
 			<div class="container">
 				<div class="footer-row">
 					<div class="footer-log">

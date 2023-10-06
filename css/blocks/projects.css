@@ -12,6 +12,13 @@
 .projects-steps {
 	display: flex;
 }
+.projects-step {
+	max-width: 456px;
+	max-height: 343px;
+}
+.projects-img {
+	width: 100%;
+}
 .projects-step > h4{
 	text-transform: uppercase;
 	padding-top: 16px;
@@ -38,4 +45,15 @@
 .more > img {
 	margin-top: -1px;
 	padding-left: 8px;
+}
+
+
+@media (max-width: 1339px) {
+
+}
+@media (max-width: 766px) {
+	
+}
+@media (max-width: 374px) {
+	
 }

@@ -59,3 +59,13 @@
 .footer-connection > ul > li > span {
 	text-transform: uppercase;
 }
+
+@media (max-width: 1339px) {
+
+}
+@media (max-width: 767px) {
+	
+}
+@media (max-width: 375px) {
+	
+}

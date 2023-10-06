@@ -18,4 +18,22 @@
 	width: 1416px;
 	padding: 0 12px;
 	margin: 0 auto;
+
 }
+
+.no-scroll {
+	overflow: hidden;
+}
+
+@media (max-width: 1439px) {
+	.container {
+		width: 100%;
+	}
+}
+@media (max-width: 766px) {
+	
+}
+@media (max-width: 374px) {
+	
+}
+
