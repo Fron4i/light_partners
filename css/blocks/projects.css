@@ -1,6 +1,5 @@
 .projects {
 	margin: 72px 0;
-	height: 495px;
 }
 .projects-header {
 	font-family: 'Roboto Condensed';
@@ -47,13 +46,57 @@
 	padding-left: 8px;
 }
 
-
-@media (max-width: 1339px) {
-
-}
 @media (max-width: 766px) {
-	
+	.projects-header {
+		padding-bottom: 32px;
+	}
+	.projects {
+		margin: 48px 0;
+		height: 100%;
+	}
 }
-@media (max-width: 374px) {
-	
+@media (max-width: 700px) {
+	.projects-more {
+		padding-bottom: 0;
+	}
+	.projects-step {
+		margin-left: 0;
+		margin-bottom: 24px;
+	}
+	.projects-step + .projects-step {
+		margin-left: 0;
+		margin-bottom: 24px;
+	}
+	.projects-step:last-child {
+		margin-left: 0;
+		margin-bottom: 32px;
+	}
+	.projects-steps {
+		display: flex;
+		flex-direction: column;
+	}
+	.projects-header {
+		margin-left: 0;
+		font-size: 48px;
+	}
+	.projects {
+		padding: 48px 0;
+		margin: 0;
+		width: 100%;
+	}
+	.more {
+		font-family: 'Roboto';
+		font-weight: 700;
+		font-size: 11px;
+	}
+	.more > img {
+		padding: 0;
+		width: 13px;
+		height: 14px;
+		margin-top: -1.5px;
+		margin-left: 4px;
+	}
+	.projects-step > h4 {
+		font-size: 20px;
+  }
 }

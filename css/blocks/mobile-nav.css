@@ -73,6 +73,9 @@
 .mobile-nav-nav > ul > li + li {
 	margin-top: 45px;
 }
+.small-mob {
+	font-size: 14px;
+}
 
 @media (max-width: 1080px) {
 	.mobile-connection {
@@ -89,8 +92,13 @@
 		width: 80px;
 		height: 80px;
 	}
+	
 }
-
+@media (max-width: 390px) {
+	.small-mob {
+		font-size: 13px;
+	}
+}
 @media (max-width: 376px) {
 	.mobile-row {
 		padding: 16px 12px;
@@ -109,5 +117,13 @@
 	.mobile-logo > img {
 		width: 64px;
 		height: 64px;
+	}
+	.small-mob {
+		font-size: 12px;
+	}
+}
+@media (max-width: 340px) {
+	.small-mob {
+		font-size: 11px;
 	}
 }
