@@ -1,6 +1,9 @@
 .none {
 	display: none !important;
 }
+main {
+	overflow-x: hidden;
+}
 
 .visually-hedden {
 	position: absolute;
@@ -18,7 +21,7 @@
 	width: 1416px;
 	padding: 0 12px;
 	margin: 0 auto;
-
+	overflow-x: hidden;
 }
 
 .no-scroll {
