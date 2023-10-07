@@ -16,6 +16,7 @@
 }
 .mobile-nav.active {
 	display: flex;
+
 }
 .mobile-logo {
 	width: 33.33%;

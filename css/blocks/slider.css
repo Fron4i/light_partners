@@ -9,9 +9,22 @@
 	right: 0;
 }
 .hero-slider {
+	max-height: 872px;
 	width: 100%;
 	height: 100vh;
 	overflow: hidden;
+}
+@media (max-width: 1080px) { 
+	.hero-slider {
+		padding-top: 0;
+		width: 100%;
+		height: 872px;
+	}
+}
+@media (max-width: 485px) { 
+	.hero-slider {
+		height: 790px;
+	}
 }
 /**/
 .hero-slider .carousel-cell {
