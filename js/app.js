@@ -2,13 +2,39 @@
 const mobileNabButton = document.querySelector('.mobile-nav-button')
 const mobileNabIcon = document.querySelector('.mobile-nav-button__icon')
 const mobileNab = document.querySelector('.mobile-nav')
+const headerLogo = document.querySelector('.header-logo')
 
+const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth+ 'px'
+headerLogo.style.paddingLeft = lockPaddingValue
 mobileNabButton.addEventListener('click', $(function() {
 		$('#nav-icon3').click(function(){
+
+			if (lockPadding.length > 0) {
+				for (let index = 0; index < lockPadding.length; index++) {
+					const el = lockPadding[index]
+					el.style.paddingRight = lockPaddingValue
+				}
+			}
+			//! .header-logo
+			headerLogo.style.paddingRight = '0px'
+			body.style.paddingRight = lockPaddingValue
+
 			$(this).toggleClass('open');
 			mobileNabIcon.classList.toggle('active')
 			mobileNab.classList.toggle('active')
 			document.body.classList.toggle('no-scroll')
+
+			if (!mobileNabIcon.classList.contains('active')) {
+				
+					if (lockPadding.length > 0) {
+						for (let index = 0; index < lockPadding.length; index++) {
+							const el = lockPadding[index];
+							el.style.paddingRight = '0px'
+						}
+					}
+					//! .header-logo
+					body.style.paddingRight = '0px'
+			}
 		});
 	}))
 
@@ -78,7 +104,7 @@ if (popupCloseIcon.length > 0) {
 		const el = popupCloseIcon[index];
 		el.addEventListener('click', function (e) {
 			popupClose(el.closest('.popup')) ;
-			e.preventDefau1t()
+			e.preventDefault()
 		})
 	}
 }
@@ -110,8 +136,6 @@ function popupClose(popupActive, doUnlock = true) {
 }
 
 function bodyLock() {
-	//~asffffffffffff
-	const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px'
 	if (lockPadding.length > 0) {
 		for (let index = 0; index < lockPadding.length; index++) {
 			const el = lockPadding[index]
