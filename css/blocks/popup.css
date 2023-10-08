@@ -10,7 +10,7 @@
 	visibility: hidden;
 	overflow-x: hidden;
 	overflow-y: auto;
-
+	transition: all 0.8s ease 0s;
 }
 .popup:target{
 	opacity: 1;
