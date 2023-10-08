@@ -27,16 +27,21 @@ body.lock {
 
 .popup__body {
 	min-height: 100%;
+	min-width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding: 30px 10px;
 }
 .popup__content {
-	background-color: #e9f3d9;
-	color: #000;
+	font-family: 'Roboto';
+	border: 1px solid #8F8F8F;
+	width: 602px;
+	height: 741px;
+	background-color: #ffffff;
+	color: #212121;
 	max-width: 800px;
-	padding: 30px;
+	padding: 40px 85px;
 	position: relative;
 	transition: all 0.2s ease 0s;
 	opacity: 0;
@@ -44,11 +49,106 @@ body.lock {
 }
 .popup__close {
 	position: absolute;
-	right: 10px;
-	top: 10px;
+	right: 15px;
+	top: 16px;
 	font-size: 20px;
 }
-.popup__title {
-	font-size: 40px;
-	margin: 0 0 1em 0;
+.head-feedback {
+	font-family: 'Roboto Condensed';
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 56px;
+	letter-spacing: -0.04em;
+	text-align: left;
+
+	text-transform: uppercase;
+	padding-bottom: 16px;
+}
+.subhead-feedback {
+	font-family: 'Roboto';
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 23px;
+	text-align: left;
+	padding-bottom: 56px;
+}
+.text-user {
+	font-family: 'Roboto';
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	text-align: left;
+	text-transform: uppercase;
+	margin-bottom: 8px;
+}
+
+.color-text {
+	padding-left: 12px;
+	font-size: 14px;
+	line-height: 16px;
+}
+input {
+	max-width: 100%;
+	height: 48px;
+	width: 100%;
+	border: 1px solid #8F8F8F;
+}
+.user-phone {
+	margin: 24px 0;
+}
+.confi {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	text-align: left;
+	color: #8F8F8F;
+	padding-bottom: 36px;
+}
+.head-button {
+	text-transform: uppercase;
+	padding: 16px 43px;
+	display: flex;
+	color: #fff;
+	background-color: #94270F;
+	font-family: Roboto;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+}
+
+@media (max-width: 767px) {
+	.popup__close {
+		width: 22px;
+		height: 23px;
+	}
+	.popup__body {
+		padding: 0;
+		width: 602px;
+		height: 728px;
+		
+	}
+	.popup__content-1 {
+		width: 432px;
+		height: 648px;
+		padding: 0;
+	}
+	.popup__content {
+		border: 2px solid #8F8F8F;
+		margin: 1px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 99.875%;
+		padding: 0;
+	}
+	.subhead-feedback {
+		padding-bottom: 32px;
+	}
+	.head-button {
+		padding: 11px 33.5px;
+		line-height: 16px;
+		font-size: 11px;
+		line-height: 13px;
+	}
 }
