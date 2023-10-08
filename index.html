@@ -16,17 +16,12 @@
 		<link rel="stylesheet" href="./css/blocks/mobile-nav.css" />
 		<link rel="stylesheet" href="./css/blocks/burger-mobile.css" />
 		<link rel="stylesheet" href="./css/blocks/slider.css" />
+		<link rel="stylesheet" href="./css/blocks/popup.css" />
 		<link
 			rel="stylesheet"
 			type="text/css"
 			href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.css"
 		/>
-
-		<script src="./js/slider.js" defer></script>
-		<script
-			src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"
-			defer
-		></script>
 		<link
 			rel="stylesheet"
 			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap"
@@ -37,7 +32,7 @@
 		/>
 	</head>
 	<body>
-		<header class="header">
+		<header id="header" class="header">
 			<div class="container">
 				<div class="header-row">
 					<div class="nav-2-step">
@@ -124,7 +119,7 @@
 		<main>
 			<div
 				class="hero-slider"
-				data-flickity='{ "wrapAround": true, "autoPlay": 2350, "pauseAutoPlayOnHover": false, "prevNextButtons": false }'
+				data-flickity='{ "wrapAround": true, "autoPlay": 2000, "pauseAutoPlayOnHover": false, "prevNextButtons": false }'
 			>
 				<div
 					class="carousel-cell"
@@ -141,7 +136,7 @@
 									</h1>
 									<div class="home-btn">
 										<button class="btn-bell">
-											заказать звонок
+											<a href="#popup">заказать звонок</a>
 										</button>
 									</div>
 								</div>
@@ -179,7 +174,7 @@
 									</h1>
 									<div class="home-btn">
 										<button class="btn-bell">
-											заказать звонок
+											<a href="#popup">заказать звонок</a>
 										</button>
 									</div>
 								</div>
@@ -217,7 +212,7 @@
 									</h1>
 									<div class="home-btn">
 										<button class="btn-bell">
-											заказать звонок
+											<a href="#popup">заказать звонок</a>
 										</button>
 									</div>
 								</div>
@@ -255,7 +250,7 @@
 									</h1>
 									<div class="home-btn">
 										<button class="btn-bell">
-											заказать звонок
+											<a href="#popup">заказать звонок</a>
 										</button>
 									</div>
 								</div>
@@ -293,7 +288,7 @@
 									</h1>
 									<div class="home-btn">
 										<button class="btn-bell">
-											заказать звонок
+											<a href="#popup">заказать звонок</a>
 										</button>
 									</div>
 								</div>
@@ -317,8 +312,19 @@
 				</div>
 			</div>
 
-			<div class="popup" id="popup"></div>
-
+			<div class="popup" id="popup">
+				<a href="#header" class="popup__area">
+					<div class="popup__body">
+						<div class="popup__content">
+							<a href="#header" class="popup__close">X</a>
+							<div class="popup__title">Modal windov</div>
+							<div class="popup__text">
+								Loretur, repudiandae aliquam aut ipsam voluptatem ab blanditiis debitis illum quod necessitatibus aspernatur iste animi alias? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab assumenda, voluptas molestias labore reiciendis ex vel molestiae cumque at, consequatur unde laudantium optio modi vero, ullam quasi ea numquam tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos laudantium reprehenderit dolorum recusandae deleniti veniam corrupti libero minus. Quae esse fugit debitis repellendus nam rem ducimus natus minus quam sint. dolorum consequatur.
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
 			<!-- <section class="home">
 				<div class="container">
 					<div class="home-row">
@@ -328,7 +334,7 @@
 							</h1>
 							<div class="home-btn">
 								<button class="btn-bell">
-									заказать звонок
+									<a href="#popup">заказать звонок</a>
 								</button>
 							</div>
 						</div>
@@ -604,6 +610,7 @@
 			type="text/javascript"
 			src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js"
 		></script>
-		<script src="./js/app.js" defer></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+		<script src="./js/app.js"></script>
 	</body>
 </html>
