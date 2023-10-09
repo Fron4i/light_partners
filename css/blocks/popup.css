@@ -37,7 +37,6 @@ body.lock {
 	font-family: 'Roboto';
 	border: 1px solid #8F8F8F;
 	width: 602px;
-	height: 741px;
 	background-color: #ffffff;
 	color: #212121;
 	max-width: 800px;
@@ -70,7 +69,7 @@ body.lock {
 	font-weight: 400;
 	line-height: 23px;
 	text-align: left;
-	padding-bottom: 56px;
+	padding-bottom: 35px;
 }
 .text-user {
 	font-family: 'Roboto';
@@ -94,7 +93,7 @@ input {
 	border: 1px solid #8F8F8F;
 }
 .user-phone {
-	margin: 24px 0;
+	margin: 19px 0;
 }
 .confi {
 	font-size: 14px;
@@ -102,7 +101,7 @@ input {
 	line-height: 16px;
 	text-align: left;
 	color: #8F8F8F;
-	padding-bottom: 36px;
+	padding-bottom: 25px;
 }
 .head-button {
 	text-transform: uppercase;
@@ -123,14 +122,13 @@ input {
 	}
 	.popup__body {
 		padding: 0;
-		width: 602px;
-		height: 728px;
-		
+		max-width: 602px;
+		height: 100%;
 	}
 	.popup__content-1 {
-		width: 432px;
+		width: 452px;
 		height: 648px;
-		padding: 0;
+		padding: 12px;
 	}
 	.popup__content {
 		border: 2px solid #8F8F8F;
@@ -150,5 +148,48 @@ input {
 		line-height: 16px;
 		font-size: 11px;
 		line-height: 13px;
+	}
+}
+@media (max-width: 420px) {
+	.popup__close {
+		width: 24px;
+	}
+	.popup__body {
+		padding: 0;
+		max-width: 375px;
+		height: 100%;
+	}
+	.popup__content-1 {
+		width: 351px;
+		max-height: 100%;
+		padding: 40px 12px 16px;
+	}
+	.popup__content {
+		border: 2px solid #8F8F8F;
+		margin: 1px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 99.875%;
+		padding: 0;
+	}
+	.subhead-feedback {
+		font-size: 16px;
+		line-height: 20px;
+		padding-bottom: 32px;
+	}
+	.head-feedback {
+		font-size: 32px;
+		line-height: 40px;
+	}
+	.head-button {
+		padding: 11px 33.5px;
+		line-height: 16px;
+		font-size: 11px;
+		line-height: 13px;
+	}
+	.confi {
+		font-size: 12px;
 	}
 }
