@@ -21,6 +21,7 @@
 	right: 0;
 	border-top: 2px solid #ccc; /* собственно то, ради чего всё затевалось */
 }
+
 .header-row {
 	display: flex;
 	align-items: center;
@@ -61,13 +62,10 @@
 	display: flex;
 	justify-content: end;
 }
-
-
 .header-nav li > a,
 .mobile-nav-nav li > a {
 	position: relative;
 }
-
 .header-nav li > a::after,
 .mobile-nav-nav li > a::after {
 	position: absolute;
@@ -77,12 +75,24 @@
 	height: 2px;
 	width: 0;
 	background-color: #94270F;
-	;
 	transition: .5s linear 0s;
 }
 .header-nav li > a:hover::after,
 .mobile-nav-nav li > a:hover::after {
 	width: 100%;
+	transition: .5s linear 0s;
+}
+li > a.active-li {
+	position: relative;
+}
+li > a.active-li::after {
+	position: absolute;
+	content: '';
+	bottom: -8px;
+	left: 0;
+	height: 2px;
+	width: 100%;
+	background-color: #94270F;
 	transition: .5s linear 0s;
 }
 
