@@ -3,6 +3,8 @@ const mobileNabButton = document.querySelector('.mobile-nav-button')
 const mobileNabIcon = document.querySelector('.mobile-nav-button__icon')
 const mobileNab = document.querySelector('.mobile-nav')
 const headerLogo = document.querySelector('.header-logo')
+const footer = document.querySelector('.footer')
+const main = document.querySelector('.footer')
 
 const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth+ 'px'
 window.onload = () => {
@@ -19,7 +21,8 @@ mobileNabButton.addEventListener('click', $(function() {
 			}
 			//! .header-logo
 			headerLogo.style.paddingRight = '0px'
-			body.style.paddingRight = lockPaddingValue
+			main.style.paddingRight = lockPaddingValue
+			footer.style.paddingRight = lockPaddingValue
 
 			$(this).toggleClass('open');
 			mobileNabIcon.classList.toggle('active')
@@ -35,48 +38,11 @@ mobileNabButton.addEventListener('click', $(function() {
 						}
 					}
 					//! .header-logo
-					body.style.paddingRight = '0px'
+					main.style.paddingRight = '0px'
+					footer.style.paddingRight = '0px'
 			}
 		});
 	}))
-
-
-// ! Slider
-
-var elem = document.querySelector('.hero-slider');
-var flkty = new Flickity( elem, {
-	wrapAround: true,
-	autoPlay: 2200,
-	pauseAutoPlayOnHover: false,
-	prevNextButtons: false
-});
-
-var playButton1 = document.querySelector('.close-popup');
-var stopButton = document.querySelector('.popup-link');
-
-$(".popup-link").on("click", function() {
-		setTimeout(function() {
-			flkty.stopPlayer();
-		}, 10)
-})
-
-function clisk() {
-	flkty.playPlayer();
-
-	playButton1.addEventListener( 'click', function() {
-		flkty.playPlayer();
-	});
-}
-
-flkty.on( 'staticClick', function( event, pointer, cellElement, cellIndex ) {
-	flkty.playPlayer();
-	setTimeout(clisk, 10);
-});
-
-flkty.on( 'dragEnd', function( event, pointer ) { 
-	flkty.playPlayer();
-	setTimeout(clisk, 10);
-});
 
 // ? Popup
 

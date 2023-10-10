@@ -14,7 +14,7 @@
 	height: 100vh;
 	overflow: hidden;
 }
-@media (max-width: 1080px) { 
+@media (max-width: 1090px) { 
 	.hero-slider {
 		padding-top: 0;
 		width: 100%;

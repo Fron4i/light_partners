@@ -5,22 +5,6 @@
 	padding: 16px 0;
 	background-color: #fff;
 }
-.header {
-	position: relative; /* важно - для того, чтобы псевдоэлемент позиционировался относительно этого элемента */
-	border-top: 55px solid transparent;
-	margin-top: -55px;
-	-moz-background-clip: padding;
-	-webkit-background-clip: padding-box;
-	background-clip: padding-box;
-}
-.header:before {
-	content: "";
-	position: absolute;
-	top: -2px; /* равен по модулю толщине border */
-	left: 0;
-	right: 0;
-	border-top: 2px solid #ccc; /* собственно то, ради чего всё затевалось */
-}
 .header-row {
 	display: flex;
 	align-items: center;
@@ -100,10 +84,10 @@
 		margin-left: 30px;
 	}
 }
-@media (max-width: 1279px) {
+@media (max-width: 1290px) {
 
 	.header-nav {
-		margin-left: 15px;
+		margin-left: auto;
 	}
 	.header-nav li + li {
 		margin-left: 25px;
@@ -112,7 +96,7 @@
 		margin-left: 15px;
 	}
 }
-@media (max-width: 1080px) {
+@media (max-width: 1090px) {
 	.header-nav, .header-login {
 		display: none;
 	}

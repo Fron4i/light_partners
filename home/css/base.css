@@ -3,6 +3,7 @@
 }
 main {
 	overflow-x: hidden;
+	padding-top: 100px;
 }
 .visually-hedden {
 	position: absolute;
@@ -30,6 +31,27 @@ main {
 @media (max-width: 1439px) {
 	.container {
 		width: 100%;
+	}
+}
+
+@media (max-width: 1080px) {
+	main {
+		padding-top: 4.5%;
+	}
+}
+@media (max-width: 767px) {
+	main {
+		padding-top: 7.5%;
+	}
+}
+@media (max-width: 484px) {
+	main {
+		padding-top: 4.5;
+	}
+}
+@media (max-width: 376px) {
+	main {
+		padding-top: 0;
 	}
 }
 
