@@ -1,5 +1,5 @@
 .company {
-	/* margin-top: calc(35vh - 150px); */
+	margin-top: calc(35vh - 140px);
 	overflow-y: auto;
 }
 .top-company-way {
@@ -60,9 +60,6 @@
 	max-height: 589;
 }
 
-@media (max-height: 744px) {
-	
-}
 
 @media (max-width: 1270px) {
 	.box-3 {

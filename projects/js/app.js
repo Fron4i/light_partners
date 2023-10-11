@@ -5,13 +5,12 @@ const mobileNab = document.querySelector('.mobile-nav')
 const headerLogo = document.querySelector('.header-logo')
 const footer = document.querySelector('.footer')
 const main = document.querySelector('.main')
-const company = document.querySelector('.company')
 
 const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth+ 'px'
-let widthHeader = document.querySelector('.header').offsetHeight + 5 + 'px';
+let widthHeader = document.querySelector('.header').offsetHeight + 5  + 'px';
 
 window.onload = () => {
-	company.style.marginTop = widthHeader;
+	main.style.paddingTop = widthHeader;
 	if (document.documentElement.clientWidth < 1080) headerLogo.style.paddingLeft = lockPaddingValue;
 }
 mobileNabButton.addEventListener('click', $(function() {
