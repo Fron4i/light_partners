@@ -7,29 +7,27 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
+	height: 870px;
 }
 .hero-slider {
 	max-height: 872px;
 	width: 100%;
-	height: 100vh;
 	overflow: hidden;
 }
 @media (max-width: 1090px) { 
 	.hero-slider {
-		padding-top: 0;
 		width: 100%;
-		height: 872px;
 	}
 }
-@media (max-width: 485px) { 
+@media (max-width: 376px) { 
 	.hero-slider {
-		height: 790px;
+		height: 577px;
 	}
 }
 /**/
 .hero-slider .carousel-cell {
 	width: 100%;
-	height: 100%;
+	height: 577px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -68,4 +66,28 @@
 .hero-slider .flickity-page-dots .dot.is-selected {
 	width: 16px;
 	height: 16px;
+}
+@media (max-width: 600px) {
+	.hero-slider .flickity-page-dots {
+		left: 17.5%;
+	}
+}
+@media (max-width: 430px) {
+	.hero-slider .flickity-page-dots {
+		left: 25%;
+	}
+}
+@media (max-width: 350px) {
+	.hero-slider .flickity-page-dots {
+		bottom: 15px;
+		left: 0%;
+	}
+	.hero-slider .flickity-page-dots .dot {
+		width: 6px;
+		height: 6px;
+	}
+	.hero-slider .flickity-page-dots .dot.is-selected {
+		width: 10px;
+		height: 10px;
+	}
 }

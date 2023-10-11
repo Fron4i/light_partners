@@ -3,9 +3,13 @@ const mobileNabButton = document.querySelector('.mobile-nav-button')
 const mobileNabIcon = document.querySelector('.mobile-nav-button__icon')
 const mobileNab = document.querySelector('.mobile-nav')
 const headerLogo = document.querySelector('.header-logo')
+const main = document.querySelector('.main')
 
 const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth+ 'px'
+let widthHeader = document.querySelector('.header').offsetHeight + 'px';
+
 window.onload = () => {
+	main.style.paddingTop = widthHeader;
 	if (document.documentElement.clientWidth < 1080) headerLogo.style.paddingLeft = lockPaddingValue;
 }
 mobileNabButton.addEventListener('click', $(function() {

@@ -13,7 +13,7 @@
 	margin-bottom: 48px;
 }
 .projects-steps {
-	margin-left: -24px;
+	margin-left: -12px;
 	flex-wrap: wrap;
 	display: flex;
 	margin-bottom: 48px;
@@ -67,7 +67,7 @@
 
 @media (max-width: 766px) {
 	.projects-header {
-		padding-bottom: 32px;
+		margin-bottom: 32px;
 	}
 }
 @media (max-width: 700px) {
