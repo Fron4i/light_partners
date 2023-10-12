@@ -33,6 +33,7 @@
 }
 .home-img-wrapper {
 	padding-left: 181px;
+	padding-bottom: 0;
 }
 .home-img {
 	max-width: 456px;

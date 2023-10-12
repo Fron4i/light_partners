@@ -1,0 +1,43 @@
+.ostankinoTower {
+	position: relative;
+	max-height: 795px;
+	overflow-y: hidden;
+}
+.ostankinoTower-wrapper {
+	overflow-y: hidden;
+	display: flex;
+	height: 795px;
+	width: 100%;
+	align-items: flex-end;
+}
+.home-content {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 100px;
+}
+.home-heading {
+	font-family: 'Roboto Condensed';
+	font-size: 48px;	
+	font-weight: 700;
+	line-height: 56px;
+	letter-spacing: -0.04em;
+	text-align: left;
+	color: #fff;
+	text-transform: uppercase;
+}
+.home-bg-img {
+	margin-top: 24px;
+	z-index: -1;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(251, 244, 235);
+}
+.home-bg-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
