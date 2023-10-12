@@ -6,10 +6,16 @@ const headerLogo = document.querySelector('.header-logo')
 const footer = document.querySelector('.footer')
 const main = document.querySelector('.main')
 
+
+
 const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth+ 'px'
 let widthHeader = document.querySelector('.header').offsetHeight + 5  + 'px';
+let heightMap = document.querySelector('.map').offsetHeight;
+let widthMap = document.querySelector('.map').offsetWidth;
+
 
 window.onload = () => {
+
 	main.style.paddingTop = widthHeader;
 	if (document.documentElement.clientWidth < 1080) headerLogo.style.paddingLeft = lockPaddingValue;
 }

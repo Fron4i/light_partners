@@ -16,13 +16,13 @@
 	margin-left: -12px;
 	flex-wrap: wrap;
 	display: flex;
-	margin-bottom: 48px;
+	margin-bottom: 60px;
 }
 .projects-steps-2 {
 	margin-left: -12px;
 	flex-wrap: wrap;
 	display: flex;
-	margin-bottom: 48px;
+	margin-bottom: 60px;
 }
 .projects-step {
 	padding-left: 20px;
@@ -58,10 +58,55 @@
 	margin-top: -1px;
 	padding-left: 8px;
 }
-
-.map {
-	padding-bottom: 72px;
+.map-img {
+	display: block;
+	position: relative;
+	max-width: 1416px; /* you can use % */
+   max-height: 626px;
 }
+.map {
+	/* margin-bottom: 37px; */
+	height: 100%;
+	position: relative;
+}
+
+#point1 {
+	position: absolute;
+	left: 16.2%;top: 10.7%;
+}
+#point2 {
+	position: absolute;
+	left: 19.7%;top: 7.2%;
+}
+#point3 {
+	position: absolute;
+	left: 25%;top: 5%;
+}
+#point4 {
+	position: absolute;
+	left: 17%;top: 16%;
+}
+#point5 {
+	position: absolute;
+	left: 20.5%;top: 13%;
+}
+#point6 {
+	position: absolute;
+	left: 37%;top: 26%;
+}
+#point7 {
+	position: absolute;
+	left: 24%;top: 74%;
+}
+#point8 {
+	position: absolute;
+	left: 66%;top: 3%;
+}
+#point9 {
+	position: absolute;
+	left: 91%;top: 45%;
+}
+
 /* @media (max-height: 744px) {
 	.projects {
 		margin-top: calc(15vh);
@@ -72,6 +117,16 @@
 @media (max-width: 766px) {
 	.projects-header {
 		margin-bottom: 32px;
+	}
+	.projects-steps {
+		margin-bottom: 24px;
+	}
+	.projects-steps-2 {
+		margin-bottom: 24px;
+	}
+	.map {
+		height: 100%;
+		/* margin-bottom: 13px; */
 	}
 }
 @media (max-width: 700px) {
@@ -119,34 +174,19 @@
 		margin-left: 4px;
 	}
 	.map {
-		width: 180%;
+		width: 200%;
 	}
 	.map-img {
-		clip-path: inset(0 44.5% 0 0);
+		clip-path: inset(0 50% 0 0);
 	}
 }
 @media (max-width: 500px) {
 	.projects-step {
 		width: 100%;
-	}
-	.projects-steps {
-		margin-bottom: 24px;
-	}
-	.projects-steps-2 {
-		margin-bottom: 24px;
+		padding-left: 12px;
 	}
 	.projects-header {
 		font-size: 28px;
 		line-height: 32px;
-	}
-	.projects-step {
-		padding-left: 12px;
-	}
-	.map {
-		width: 200%;
-		padding-bottom: 48px;
-	}
-	.map-img {
-		clip-path: inset(0 50% 0 0);
 	}
 }

@@ -1,9 +1,14 @@
+html, body {
+	height: 100vh;
+}
 .none {
 	display: none !important;
 }
+.wrapper {
+	height: 100%;
+}
 main {
 	overflow-x: hidden;
-
 }
 .visually-hedden {
 	position: absolute;
@@ -18,6 +23,7 @@ main {
 }
 
 .container {
+	height: 100%;
 	width: 1416px;
 	padding: 0 12px;
 	margin: 0 auto;
