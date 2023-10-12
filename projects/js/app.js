@@ -5,6 +5,9 @@ const mobileNab = document.querySelector('.mobile-nav')
 const headerLogo = document.querySelector('.header-logo')
 const footer = document.querySelector('.footer')
 const main = document.querySelector('.main')
+const click1 = document.querySelector('.click')
+const mapMenu = document.querySelector('.map-menu')
+const closeMenu = document.querySelector('.close-menu')
 
 
 
@@ -15,43 +18,60 @@ let widthMap = document.querySelector('.map').offsetWidth;
 
 
 window.onload = () => {
-
 	main.style.paddingTop = widthHeader;
 	if (document.documentElement.clientWidth < 1080) headerLogo.style.paddingLeft = lockPaddingValue;
 }
+
+$(document).on("click.click", ".click", function(){
+	mapMenu.style.zIndex = '101';
+});
+
+$(document).on("click.close-menu", ".close-menu", function(){
+	mapMenu.style.zIndex = '-1';
+});
+
+// click1.addEventListener('click', $(function() {
+// 	$('.click').click(function(){
+// 		mapMenu.style.zIndex = '101';
+// 	});
+// }))
+
+// closeMenu.addEventListener('click', $(function() {
+// 	mapMenu.style.zIndex = '-1';
+// }))
+
 mobileNabButton.addEventListener('click', $(function() {
-		$('#nav-icon3').click(function(){
+	$('#nav-icon3').click(function(){
 
-			if (lockPadding.length > 0) {
-				for (let index = 0; index < lockPadding.length; index++) {
-					const el = lockPadding[index]
-					el.style.paddingRight = lockPaddingValue
-				}
+		if (lockPadding.length > 0) {
+			for (let index = 0; index < lockPadding.length; index++) {
+				const el = lockPadding[index]
+				el.style.paddingRight = lockPaddingValue
 			}
-			//! .header-logo
-			headerLogo.style.paddingRight = '0px'
-			main.style.paddingRight = lockPaddingValue
-			footer.style.paddingRight = lockPaddingValue
+		}
+		//! .header-logo
+		headerLogo.style.paddingRight = '0px'
+		main.style.paddingRight = lockPaddingValue
+		footer.style.paddingRight = lockPaddingValue
 
-			$(this).toggleClass('open');
-			mobileNabIcon.classList.toggle('active')
-			mobileNab.classList.toggle('active')
-			document.body.classList.toggle('no-scroll')
+		$(this).toggleClass('open');
+		mobileNabIcon.classList.toggle('active')
+		mobileNab.classList.toggle('active')
+		document.body.classList.toggle('no-scroll')
 
-			if (!mobileNabIcon.classList.contains('active')) {
-				
-					if (lockPadding.length > 0) {
-						for (let index = 0; index < lockPadding.length; index++) {
-							const el = lockPadding[index];
-							el.style.paddingRight = '0px'
-						}
+		if (!mobileNabIcon.classList.contains('active')) {
+				if (lockPadding.length > 0) {
+					for (let index = 0; index < lockPadding.length; index++) {
+						const el = lockPadding[index];
+						el.style.paddingRight = '0px'
 					}
-					//! .header-logo
-					main.style.paddingRight = '0px'
-					footer.style.paddingRight = '0px'
-			}
-		});
-	}))
+				}
+				//! .header-logo
+				main.style.paddingRight = '0px'
+				footer.style.paddingRight = '0px'
+		}
+	});
+}))
 
 // ? Popup
 

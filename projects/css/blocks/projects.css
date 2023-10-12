@@ -1,5 +1,5 @@
 .projects {
-	overflow-y: auto;
+	overflow-x: hidden;
 }
 .projects-header {
 	color: #212121;
@@ -18,6 +18,7 @@
 	display: flex;
 	margin-bottom: 60px;
 }
+
 .projects-steps-2 {
 	margin-left: -12px;
 	flex-wrap: wrap;
@@ -63,11 +64,77 @@
 	position: relative;
 	max-width: 1416px; /* you can use % */
    max-height: 626px;
+	overflow-x: hidden;
 }
 .map {
-	/* margin-bottom: 37px; */
+	overflow-x: hidden;
+	overflow-y: hidden;
+	margin-bottom: 72px;
 	height: 100%;
 	position: relative;
+}
+.click {
+	z-index: 100;
+	cursor: pointer;
+}
+.map-menu {
+	z-index: -1;
+	left: 27%;
+	top: 43px;
+	position: absolute;
+}
+.selection-menu {
+	position: relative;
+	width: 375px;
+	height: 300px;
+}
+.close-menu {
+	z-index: 102;
+	top: 8px;
+	right: 8px;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+}
+.menu-content {
+	font-family: 'Roboto';
+	font-size: 24px;
+	text-transform: uppercase;
+	overflow-x:hidden;
+	overflow-y:scroll;
+	width: 100%;
+	height: 90%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	margin: 0 -8px;
+}
+::-webkit-scrollbar-track {
+	margin: 30px 0;
+}
+.locachion {
+	font-size: 14px;
+	text-transform: none;
+}
+.menu-content ul > li {
+	margin: 24px auto 12px 23px;
+}
+.menu-content ul > li.locachion {
+	margin: 20px auto 24px 23px;
+}
+.menu-content ul > li + li {
+	margin: 12px auto 12px 23px;
+}
+
+.menu-content::-webkit-scrollbar {
+	width: 3px;
+}
+.menu-content::-webkit-scrollbar-track {
+	background: none;        /* цвет дорожки */
+}
+.menu-content::-webkit-scrollbar-thumb {
+	background-color: #8F8F8F;    /* цвет плашки */
+	border-radius: 10%;
 }
 
 #point1 {
@@ -114,6 +181,13 @@
 } */
 
 
+@media (max-width: 860px) {
+	.map-menu {
+		left: 23px;
+		top: 12px;
+	}
+}
+
 @media (max-width: 766px) {
 	.projects-header {
 		margin-bottom: 32px;
@@ -125,11 +199,10 @@
 		margin-bottom: 24px;
 	}
 	.map {
-		height: 100%;
-		/* margin-bottom: 13px; */
+		margin-bottom: 48px;
 	}
 }
-@media (max-width: 700px) {
+@media (max-width: 760px) {
 	.projects-steps {
 		justify-content: center;
 		align-items: center;
@@ -180,6 +253,7 @@
 		clip-path: inset(0 50% 0 0);
 	}
 }
+
 @media (max-width: 500px) {
 	.projects-step {
 		width: 100%;
@@ -188,5 +262,23 @@
 	.projects-header {
 		font-size: 28px;
 		line-height: 32px;
+	}
+}
+
+@media (max-width: 450px) {
+	.selection-menu {
+		max-width: 325px;
+		max-height: 260px;
+	}
+	.menu-content {
+		font-size: 20px;
+	}
+	.locachion {
+		font-size: 12px;
+		text-transform: none;
+	}
+	.map-menu {
+		left: 12px;
+		top: 12px;
 	}
 }
