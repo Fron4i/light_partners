@@ -23,20 +23,45 @@
 	font-weight: 400;
 	line-height: 23px;
 	text-align: left;
+	margin-right: 24px;
 }
 .scheme {
 	flex-wrap: wrap;
 	display: flex;
+	min-width: 58.65%;
+	height: 100%;
+}
+.scheme > ul {
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: space-between;
 }
 .scheme1 {
-	display: block;
-	max-width: 819px;
-	max-height: 430px;
+	max-width: 100%;
+}
+.scheme1 > img {
+	max-width: 100%;
+	margin-bottom: 24px;
+}
+.scheme2 {
+	max-width: 42.26%;
+}
+.scheme2 > img {
+	max-width: 100%;
+}
+.scheme3 {
+	
+	display: flex;
+	max-width: 57.74%;
+}
+.scheme3 > img {
+	padding-left: 24px;
+	max-width: 100%;
 }
 .ostankinoTower-wrapper {
 	/* overflow-y: hidden; */
 	display: flex;
-	height: 795px;
+	height: 630px;
 	width: 100%;
 	align-items: flex-end;
 	margin-bottom: 72px;
@@ -75,16 +100,121 @@
 	height: 100%;
 	object-fit: cover;
 }
-@media (max-width: 1439px) {
+
+@media (max-width: 1000px) {
 	.scheme {
-		width: 100%;
+		flex-wrap: wrap;
+		display: flex;
+		min-width: 53%;
 		height: 100%;
 	}
+}
+
+@media (max-width: 900px) { 
 	.scheme > ul {
-		display: flex;
-		padding-left: 0px;
+		flex-direction: column;
 	}
-	.product-content {
+	.scheme1 {
 		max-width: 100%;
+	}
+	.scheme2 {
+		max-width: 100%;
+	}
+	.scheme2 > img {
+		padding-left: 24px;
+		max-width: 100%;
+	}
+	.scheme3 {
+		max-width: 100%;
+	}
+	.scheme3 > img {
+		padding-left: 24px;
+		max-width: 100%;
+	}
+	.ostankino-content {
+		margin-bottom: 48px;
+	}
+	.ostankinoTower-wrapper {
+		margin-bottom: 48px;
+	}
+	.ostankinoTower-wrapper-content {
+		margin-bottom: 48px;
+	}
+	.scheme {
+		min-width: 38.64%;
+	}
+	.scheme1 {
+		max-width: 100%;
+	}
+	.scheme2 {
+		max-width: 100%;
+	}
+	.scheme2 > img {
+		padding-left: 0;
+		margin-bottom: 24px;
+		max-width: 100%;
+	}
+	.scheme3 {
+		max-width: 100%;
+	}
+	.scheme3 > img {
+		padding-left: 0;
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 767px) {
+	.home-heading {
+		max-width: 450px;
+	}
+}
+
+@media (max-width: 650px) {
+	.home-heading {
+		max-width: 226px;
+	}
+	.home-content {
+		margin-bottom: 60px;
+	}
+	.ostankino-text {
+	font-size: 16px;
+	line-height: 19px;
+	}
+	.ostankinoTower-wrapper {
+		max-height: 620px;
+	}
+}
+
+@media (max-width: 550px) {
+	.scheme {
+		min-width: 100%;
+	}
+	.scheme2 {
+		min-width: 100%;
+	}
+	.scheme3 {
+		min-width: 100%;
+	}
+	.home-heading {
+		max-width: 226px;
+		font-size: 28px;
+	}
+	.ostankino-content {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 48px;
+	}
+	.ostankino-text {
+		margin-right: 0;
+		margin-bottom: 24px;
+	}
+	.ostankinoTower-wrapper {
+		margin-bottom: 32px;
+	}
+	.ostankinoTower-wrapper-content {
+		margin-bottom: 48px;
+	}
+	.ostankinoTower-wrapper {
+		max-height: 523px;
 	}
 }
