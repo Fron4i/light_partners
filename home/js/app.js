@@ -50,7 +50,7 @@ mobileNabButton.addEventListener('click', $(function() {
 var elem = document.querySelector('.hero-slider');
 var flkty = new Flickity( elem, {
 	wrapAround: true,
-	autoPlay: 2200000,
+	autoPlay: 2200,
 	pauseAutoPlayOnHover: false,
 	prevNextButtons: false
 });
