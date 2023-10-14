@@ -8,9 +8,40 @@ const main = document.querySelector('.main')
 const click1 = document.querySelector('.click')
 const mapMenu = document.querySelector('.map-menu')
 const closeMenu = document.querySelector('.close-menu')
-const zi = document.querySelector('.zi')
+const popupLeft = document.querySelector('.popup-left')
+const popupRight = document.querySelector('.popup-right')
 
 
+let getStyle = function(e, styleName) {
+	let styleValue = "";
+	if (document.defaultView && document.defaultView.getComputedStyle) {
+		styleValue = document.defaultView.getComputedStyle(e, "").getPropertyValue(styleName);
+	} else if (e.currentStyle) {
+		styleName = styleName.replace(/\-(\w)/g, function(strMatch, p1) {
+			return p1.toUpperCase();
+		});
+		styleValue = e.currentStyle[styleName];
+	}
+	return parseInt(styleValue);
+}
+function setMargin() {
+		let marLeft = getStyle(popupRight, 'margin-left');
+	console.log(marLeft); 
+
+	if (marLeft <= 55) {
+		popupLeft.style.marginRight = 55 + 'px'
+		popupRight.style.marginLeft = 55 + 'px'
+	}
+}
+$(".scheme1").click(function() { 
+	setMargin()
+})
+$(".scheme2").click(function() { 
+	setMargin()
+})
+$(".scheme3").click(function() { 
+	setMargin()
+})
 
 const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth+ 'px'
 let widthHeader = document.querySelector('.header').offsetHeight + 5  + 'px';
@@ -27,16 +58,6 @@ $(document).on("click.click", ".click", function(){
 $(document).on("click.close-menu", ".close-menu", function(){
 	mapMenu.style.zIndex = '-1';
 });
-
-// click1.addEventListener('click', $(function() {
-// 	$('.click').click(function(){
-// 		mapMenu.style.zIndex = '101';
-// 	});
-// }))
-
-// closeMenu.addEventListener('click', $(function() {
-// 	mapMenu.style.zIndex = '-1';
-// }))
 
 mobileNabButton.addEventListener('click', $(function() {
 	$('#nav-icon3').click(function(){
@@ -116,7 +137,6 @@ function popupOpen(curentPopup) {
 		curentPopup.addEventListener('click', function (e) {
 			if (!e.target.closest('.popup__content')) {
 				popupClose(e.target.closest('.popup'))
-				flkty.playPlayer();
 			}
 		})
 	}
