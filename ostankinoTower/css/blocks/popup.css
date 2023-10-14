@@ -97,7 +97,7 @@ body.lock {
 		padding: 12px;
 		vertical-align: top;
 	}
-	.popup-left, .popup-left, .popup-left, .popup-right, .popup-right, .popup-right {
+	.popup-left, .popup-right {
 		display: none;
 	}
 } 

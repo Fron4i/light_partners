@@ -8,8 +8,12 @@ const main = document.querySelector('.main')
 const click1 = document.querySelector('.click')
 const mapMenu = document.querySelector('.map-menu')
 const closeMenu = document.querySelector('.close-menu')
-const popupLeft = document.querySelector('.popup-left')
-const popupRight = document.querySelector('.popup-right')
+const l1 = document.querySelector('.l1')
+const r1 = document.querySelector('.r1')
+const l2 = document.querySelector('.l2')
+const r2 = document.querySelector('.r2')
+const l3 = document.querySelector('.l3')
+const r3 = document.querySelector('.r3')
 
 
 let getStyle = function(e, styleName) {
@@ -24,23 +28,45 @@ let getStyle = function(e, styleName) {
 	}
 	return parseInt(styleValue);
 }
-function setMargin() {
-		let marLeft = getStyle(popupRight, 'margin-left');
+
+function setMargin(l, r) {
+	let marLeft = getStyle(r, 'margin-left');
 	console.log(marLeft); 
 
 	if (marLeft <= 55) {
-		popupLeft.style.marginRight = 55 + 'px'
-		popupRight.style.marginLeft = 55 + 'px'
+		l.style.marginRight = 55 + 'px'
+		l.style.marginLeft = 43 + 'px'
+		r.style.marginLeft = 55 + 'px'
+		r.style.marginRight = 43 + 'px'
 	}
 }
+
 $(".scheme1").click(function() { 
-	setMargin()
+	setMargin(l1, r1)
 })
 $(".scheme2").click(function() { 
-	setMargin()
+	setMargin(l2, r2)
 })
 $(".scheme3").click(function() { 
-	setMargin()
+	setMargin(l3, r3)
+})
+$(".l1").click(function() { 
+	setMargin(l3, r3)
+})
+$(".r1").click(function() { 
+	setMargin(l2, r2)
+})
+$(".l2").click(function() { 
+	setMargin(l1, r1)
+})
+$(".r2").click(function() { 
+	setMargin(l3, r3)
+})
+$(".l3").click(function() { 
+	setMargin(l2, r2)
+})
+$(".r3").click(function() { 
+	setMargin(l1, r1)
 })
 
 const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth+ 'px'
