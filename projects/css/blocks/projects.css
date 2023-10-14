@@ -59,11 +59,12 @@
 	margin-top: -1px;
 	padding-left: 8px;
 }
-.map-img {
+
+#map {
 	display: block;
 	position: relative;
-	max-width: 1416px; /* you can use % */
-   max-height: 626px;
+	max-width: 1416px;
+	max-height: 626px;
 	overflow-x: hidden;
 }
 .map {
@@ -246,9 +247,7 @@
 		margin-top: -1.5px;
 		margin-left: 4px;
 	}
-	.map {
-		width: 200%;
-	}
+
 	.map-img {
 		clip-path: inset(0 50% 0 0);
 	}
@@ -267,8 +266,8 @@
 
 @media (max-width: 450px) {
 	.selection-menu {
-		max-width: 325px;
-		max-height: 260px;
+		width: 315px;
+		height: 260px;
 	}
 	.menu-content {
 		font-size: 20px;

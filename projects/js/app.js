@@ -6,9 +6,9 @@ const headerLogo = document.querySelector('.header-logo')
 const footer = document.querySelector('.footer')
 const main = document.querySelector('.main')
 const click1 = document.querySelector('.click')
+const marker = document.querySelector('.map-circle-placemark._comma._size_medium._outline')
 const mapMenu = document.querySelector('.map-menu')
 const closeMenu = document.querySelector('.close-menu')
-
 
 
 const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth+ 'px'
@@ -22,7 +22,12 @@ window.onload = () => {
 	if (document.documentElement.clientWidth < 1080) headerLogo.style.paddingLeft = lockPaddingValue;
 }
 
-$(document).on("click.click", ".click", function(){
+window.onclick = e => {
+	console.log(e.target);  // to get the element
+	console.log(e.target.tagName);  // to get the element tag name alone
+} 
+
+$(document).on("click.ymaps-image-with-content", ".ymaps-image-with-content", function(){
 	mapMenu.style.zIndex = '101';
 });
 
