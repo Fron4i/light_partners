@@ -31,6 +31,9 @@
 	min-width: 58.65%;
 	height: 100%;
 }
+.content__image {
+	display: flex;
+}
 .scheme > ul {
 	flex-wrap: wrap;
 	display: flex;
@@ -39,22 +42,21 @@
 .scheme1 {
 	max-width: 100%;
 }
-.scheme1 > img {
+.scheme1 > a > img {
 	max-width: 100%;
 	margin-bottom: 24px;
 }
 .scheme2 {
 	max-width: 42.26%;
 }
-.scheme2 > img {
+.scheme2 > a > img {
 	max-width: 100%;
 }
 .scheme3 {
-	
 	display: flex;
 	max-width: 57.74%;
 }
-.scheme3 > img {
+.scheme3 > a > img {
 	padding-left: 24px;
 	max-width: 100%;
 }
@@ -120,14 +122,14 @@
 	.scheme2 {
 		max-width: 100%;
 	}
-	.scheme2 > img {
+	.scheme2 > a > img {
 		padding-left: 24px;
 		max-width: 100%;
 	}
 	.scheme3 {
 		max-width: 100%;
 	}
-	.scheme3 > img {
+	.scheme3 > a > img {
 		padding-left: 24px;
 		max-width: 100%;
 	}
@@ -149,15 +151,15 @@
 	.scheme2 {
 		max-width: 100%;
 	}
-	.scheme2 > img {
+	.scheme3 {
+		max-width: 100%;
+	}
+	.scheme2 > a > img {
 		padding-left: 0;
 		margin-bottom: 24px;
 		max-width: 100%;
 	}
-	.scheme3 {
-		max-width: 100%;
-	}
-	.scheme3 > img {
+	.scheme3 > a > img {
 		padding-left: 0;
 		max-width: 100%;
 	}
@@ -193,6 +195,7 @@
 		min-width: 100%;
 	}
 	.scheme3 {
+		display: block;
 		min-width: 100%;
 	}
 	.home-heading {

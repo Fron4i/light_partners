@@ -8,6 +8,7 @@ const main = document.querySelector('.main')
 const click1 = document.querySelector('.click')
 const mapMenu = document.querySelector('.map-menu')
 const closeMenu = document.querySelector('.close-menu')
+const zi = document.querySelector('.zi')
 
 
 

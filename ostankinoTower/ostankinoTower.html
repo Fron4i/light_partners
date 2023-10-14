@@ -15,6 +15,7 @@
 		<link rel="stylesheet" href="./css/blocks/mobile-nav-button.css" />
 		<link rel="stylesheet" href="./css/blocks/mobile-nav.css" />
 		<link rel="stylesheet" href="./css/blocks/burger-mobile.css" />
+		<link rel="stylesheet" href="./css/blocks/popup.css" />
 
 		<link
 			rel="stylesheet"
@@ -179,22 +180,34 @@
 							<div class="scheme">
 								<ul>
 									<li class="scheme1">
-										<img
-											class="scheme1"
-											src="./img/scheme1.jpg"
-										/>
+										<a
+											href="#image-1"
+											class="content__image popup-link"
+											><img
+												class="scheme1"
+												src="./img/scheme1.jpg"
+											/>
+										</a>
 									</li>
 									<li class="scheme2">
-										<img
-											class="scheme2"
-											src="./img/scheme2.jpg"
-										/>
+										<a
+											href="#image-2"
+											class="content__image popup-link"
+											><img
+												class="scheme2"
+												src="./img/scheme2.jpg"
+											/>
+										</a>
 									</li>
 									<li class="scheme3">
-										<img
-											class="scheme3"
-											src="./img/scheme3.jpg"
-										/>
+										<a
+											href="#image-3"
+											class="content__image popup-link"
+											><img
+												class="scheme3"
+												src="./img/scheme3.jpg"
+											/>
+										</a>
 									</li>
 								</ul>
 							</div>
@@ -202,6 +215,70 @@
 					</div>
 				</div>
 			</main>
+
+			<div class="popup forma" id="image-1">
+				<div class="popup__body">
+					<a href="#header" class="popup__close close-popup">
+						<img src="./img/closs.svg" />
+					</a>
+					<a href="#image-3" class="popup-left popup__content popup-link">
+						<img src="./img/1.svg" />
+					</a>
+					<div class="popup__content popup__content__image">
+						<div class="popup__image">
+							<img
+								class="popup__image-1"
+								src="./img/scheme1.jpg"
+							/>
+						</div>
+					</div>
+					<a href="#image-2" class="popup-right popup__content  popup-link">
+						<img src="./img/2.svg" />
+					</a>
+				</div>
+			</div>
+			<div class="popup forma" id="image-2">
+				<div class="popup__body">
+					<a href="#header" class="popup__close close-popup">
+						<img src="./img/closs.svg" />
+					</a>
+					<a href="#image-1" class="popup-left-2 popup__content  popup-link">
+						<img src="./img/1.svg" />
+					</a>
+					<div class="popup__content popup__content__image">
+						<div class="popup__image">
+							<img
+								class="popup__image-2"
+								src="./img/scheme2.jpg"
+							/>
+						</div>
+					</div>
+					<a href="#image-3" class="popup-right-2  popup__content  popup-link">
+						<img src="./img/2.svg" />
+					</a>
+				</div>
+			</div>
+			<div class="popup forma" id="image-3">
+				<div class="popup__body">
+					<a href="#header" class="popup__close close-popup">
+						<img src="./img/closs.svg" />
+					</a>
+					<a href="#image-2" class="popup-left-3 popup__content  popup-link">
+						<img src="./img/1.svg" />
+					</a>
+					<div class="popup__content popup__content__image">
+						<div class="popup__image">
+							<img
+								class="popup__image-3"
+								src="./img/scheme3.jpg"
+							/>
+						</div>
+					</div>
+					<a href="#image-1" class="popup-right-3 popup__content  popup-link">
+						<img src="./img/2.svg" />
+					</a>
+				</div>
+			</div>
 
 			<footer class="footer">
 				<div class="container">
