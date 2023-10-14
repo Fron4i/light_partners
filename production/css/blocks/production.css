@@ -1,9 +1,14 @@
 .production {
-	margin: 72px 0 52px 0;
+	overflow-y: auto;
+	margin-bottom: 72px;
 }
-.production-steps {
+.production-steps:not(:last-child) {
 	display: flex;
-	margin-bottom: 32px;
+	margin-bottom: 72px;
+}
+.production-steps.mini-steps{
+	display: flex;
+	margin-bottom: 48px;
 }
 .production-step {
 	max-width: 50%;
@@ -19,6 +24,12 @@
 .production-step > img {
 	padding: 36px 0 16px 0;
 }
+.production-step > img.i2 {
+	padding: 0;
+}
+.production-step > img.i2 + img.i2 {
+	margin-top:20px;
+}
 .production-step > h4 {
 	max-width: 456px;
 	text-transform: uppercase;
@@ -26,7 +37,6 @@
 	font-family: 'Roboto';
 	font-size: 24px;
 }
-
 .production-img {
 	max-width: 100%;
 }
@@ -37,19 +47,40 @@
 	}
 }
 @media (max-width: 765px) {
-	.production {
-		margin: 48px 0 42px 0;
-	}
 	.production-step > p {
 		font-size: 16px;
 	}
 	.production-step > h4 {
 		font-size: 20px;
 	}
+	.production-steps:not(:last-child) {
+		display: flex;
+		margin-bottom: 48px;
+  }
+  .production-steps.mini-steps{
+	display: flex;
+	margin-bottom: 32px;
+}
+.production {
+	overflow-y: auto;
+	margin-bottom: 48px;
+}
 }
 @media (max-width: 615px) {
-	.production {
-		margin: 48px 0 32px 0;
+	.production-step > p {
+		margin-bottom: 24px;
+  }
+  .production-step > p.non-margin {
+	margin-bottom: 0;
+  }
+	.production-step > h4 {
+		max-width: 100%;
+	}
+	.company-header {
+		padding-bottom: 32px;
+  }
+	.production-step {
+		max-width: 100%;
 	}
 	.production-steps {
 		flex-direction: column;
@@ -59,5 +90,5 @@
 	}
 	.production-step + .production-step {
 		margin-left: 0;
-	}
+  }
 }
