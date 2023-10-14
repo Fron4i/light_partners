@@ -23,6 +23,7 @@ body.lock {
 .popup.open .popup__content {
 	transform: perspective(1200px) translate(0px, 0%) rotateX(0deg);
 	opacity: 1;
+	width: max-content;
 }
 
 .popup__body {

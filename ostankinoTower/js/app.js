@@ -32,13 +32,22 @@ let getStyle = function(e, styleName) {
 function setMargin(l, r) {
 	let marLeft = getStyle(r, 'margin-left');
 	console.log(marLeft); 
-
-	if (marLeft <= 55) {
-		l.style.marginRight = 55 + 'px'
-		l.style.marginLeft = 43 + 'px'
-		r.style.marginLeft = 55 + 'px'
-		r.style.marginRight = 43 + 'px'
+	if (window.innerWidth > 1000) {
+		if (marLeft <= 55) {
+			l.style.marginRight = 55 + 'px'
+			l.style.marginLeft = 46 + 'px'
+			r.style.marginLeft = 55 + 'px'
+			r.style.marginRight = 46 + 'px'
+		}
+	} else {
+		if (marLeft <= 28) {
+			l.style.marginRight = 28 + 'px'
+			l.style.marginLeft = 17 + 'px'
+			r.style.marginLeft = 28 + 'px'
+			r.style.marginRight = 17 + 'px'
+		}
 	}
+
 }
 
 $(".scheme1").click(function() { 
