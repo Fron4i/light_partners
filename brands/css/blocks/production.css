@@ -1,0 +1,242 @@
+.production {
+	overflow-y: auto;
+	margin-bottom: 80px;
+}
+
+.big-text {
+	text-transform: uppercase;
+	font-family: 'Roboto';
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 28px;
+	text-align: left;
+	max-width: 424px;
+	margin-bottom: 20px;
+	min-height: 56px;
+}
+.production-steps {
+	display: flex;
+	margin-bottom: 72px;
+}
+.production-steps.lasdt {
+	display: flex;
+	margin-bottom: 0;
+	justify-content: start;
+	width: 100%;
+	flex-direction: column;
+}
+.bold2 {
+		min-width: 33%;
+	/* min-height: 82px; */
+	font-weight: 700;
+}
+
+.production-step.a2 + .production-step.a3 {
+	margin-top: 24px;
+	margin-left: 0;
+}
+.production-step.a1 + .production-step.a2 {
+	margin-top: 24px;
+	margin-left: 0;
+}
+.last-e {
+	max-width: 380px;
+}
+
+.production-steps.lasdt > div > h3 {
+	max-width: 33%;
+    min-width: 369px;
+}
+.production-steps.mini-steps{
+	display: flex;
+	margin-bottom: 48px;
+}
+.production-step {
+	width: 456px;
+	/* max-width: 33.33%; */
+}
+.a1 {
+	display: flex;
+	justify-content: start;
+}
+.aa1 {
+	width: 456px;
+	min-width: 33%;
+}
+.aa1 + .aa1 {
+	padding-left: 13px;
+}
+.aa1 + .aa1 + .aa1 {
+	padding-left: 24px;
+}
+.production-step.a1, .production-step.a2, .production-step.a3 {
+	min-width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: start;
+	justify-content: space-between;
+	/* max-width: 33.33%; */
+}
+.production-step.a2 > div > h3 {
+	display: flex;
+	justify-content: start;
+	align-items: start;
+}
+.production-step.a2 {
+	display: flex;
+	justify-content: start;
+	align-items: start;
+}
+.production-step.a3 {
+	display: flex;
+	justify-content: start;
+	align-items: start;
+}
+.production-step {
+	font-weight: 400;
+	font-family: 'Roboto';
+	font-size: 20px;
+	line-height: 23px;
+	text-align: left;
+}
+.small-tect {
+	display: block;
+	max-width: 336px;
+	font-weight: 400;
+	font-family: 'Roboto';
+	font-size: 20px;
+	line-height: 23px;
+	text-align: left;
+}
+.production-step + .production-step {
+	margin-left: 24px;
+}
+.production-step > img {
+	padding: 36px 0 16px 0;
+}
+.production-step > img.i2 {
+	padding: 0;
+}
+.production-step > img.i2 + img.i2 {
+	margin-top:20px;
+}
+.production-step > h4 {
+	max-width: 456px;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-family: 'Roboto';
+	font-size: 24px;
+}
+.production-img {
+	max-width: 100%;
+}
+
+@media (max-width: 1000px) {
+	.bold2 {
+		min-height: 82px;
+		font-weight: 700;
+	}
+	.aaaa {
+		max-width: 33%;
+		display: flex;
+		align-items: end;
+		flex-wrap: wrap;
+	}
+	.production-step.aaaa > .big-text {
+		min-height: 84px;
+	}
+	.production {
+		margin-bottom: 24px;
+  }
+  .production-steps {
+	display: flex;
+	margin-bottom: 48px;
+	}
+}
+@media (max-width: 650px) {
+	.production-steps {
+		flex-wrap: wrap;
+	}
+	.production-step {
+		max-width: 100%;
+		width: 100%;
+	}
+	.production-step + .production-step {
+		margin-top: 24px;
+		margin-left: 0;
+  }
+  .big-text {
+	min-height: 35px;
+	max-width: 100%;
+	margin-bottom: 15px;
+}
+.small-tect { 
+	max-width: 100%;
+}
+.a1 {
+	flex-wrap: wrap;
+}
+.aa1 {
+	max-width: 100%;
+}
+.aa1 + .aa1 {
+	padding-left: 0;
+}
+.aa1 + .aa1 + .aa1 {
+	padding-left: 0;
+}
+.aa1 {
+	width: 100%;
+}
+}
+/*
+@media (max-width: 765px) {
+	.production-step > p {
+		font-size: 16px;
+	}
+	.production-step > h4 {
+		font-size: 20px;
+	}
+	.production-steps:not(:last-child) {
+		display: flex;
+		margin-bottom: 48px;
+  }
+  .production-steps.mini-steps{
+	display: flex;
+	margin-bottom: 32px;
+}
+.production {
+	overflow-y: auto;
+	margin-bottom: 48px;
+}
+}
+@media (max-width: 615px) {
+	.production-step + .production-step {
+		margin-top: 24px;
+	}
+	.production-step > p {
+		margin-bottom: 24px;
+  }
+  .production-step > p.non-margin {
+	margin-bottom: 0;
+  }
+	.production-step > h4 {
+		max-width: 100%;
+	}
+	.company-header {
+		padding-bottom: 32px;
+  }
+	.production-step {
+		max-width: 100%;
+	}
+	.production-steps {
+		flex-direction: column;
+	}
+	.production-step > img {
+		padding: 24px 0 16px 0;
+	}
+	.production-step + .production-step {
+		margin-left: 0;
+  }
+} */
