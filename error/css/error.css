@@ -1,0 +1,149 @@
+.error {
+	position: relative;
+	width: 100%;
+	/* overflow-y: hidden;
+	overflow-x: hidden; */
+}
+.error-wrapper {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: end;
+	height: 100vh;
+
+}
+.error-content {
+	bottom: 10%;
+	right: 25%;
+	/* margin-right: 450px;
+	margin-bottom: 70px; */
+	position: fixed;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: end;
+	flex-direction: column;
+	width: max-content;
+	text-shadow: 2px 2px 0px #00000026;
+	color: #fff;
+	text-align: center;
+}
+.error-content > h1 {
+	font-family: 'Roboto Condensed';
+	font-size: 200px;
+	font-weight: 700;
+	line-height: 234px;
+	letter-spacing: -0.04em;
+	text-align: left;
+}
+.error-content > h2 {
+	font-family: 'Roboto';
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 28px;
+	letter-spacing: 0em;
+	margin-bottom: 24px;
+	text-transform: uppercase;
+}
+.error-btn {
+	margin: 0 auto;
+	display: block;
+	width: max-content;
+	background-color: #94270F;
+}
+.btn-home a{
+	display: block;
+	padding: 16px 63px;
+	font-family: 'Roboto';
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 14px;
+}
+.btn-home {
+	color: #ffffff;
+}
+.home-bg-img {
+	overflow-y: hidden;
+	/* margin-top: 24px; */
+	z-index: -1;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+}
+.home-bg-img img {
+	/* overflow-y: hidden; */
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+@media (max-width: 1150px) {
+	.error-content {
+		bottom: 10%;
+		right: 20%;
+	}
+}
+@media (max-width: 950px) {
+	.error-content {
+		bottom: 10%;
+		right: 16%;
+	}
+}
+@media (max-width: 800px) {
+	.error-content {
+		bottom: 10%;
+		right: 13%;
+	}
+}
+@media (max-width: 777px) {
+	.error-content {
+		bottom: 19%;
+		right: 10%;
+	}
+	.error-content > h1 {
+		font-family: 'Roboto Condensed';
+		font-size:120px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: -50px;
+	}
+	.error-content > h2 {
+		font-family: 'Roboto Condensed';
+		font-size:20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		/* margin-bottom: -50px; */
+	}
+	.btn-home a{
+		display: block;
+		padding: 11px 49px;
+		font-family: 'Roboto';
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 11px;
+	}
+}
+@media (max-width: 600px) {
+	.error-content {
+		bottom: 23%;
+		right: 15%;
+	}
+}
+@media (max-width: 400px) {
+	.error-content > h1 {
+		font-family: 'Roboto Condensed';
+		font-size:60px;
+		line-height: 70px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 10px;
+	}
+	.error-content {
+		bottom: 33%;
+		right: 13%;
+	}
+}
