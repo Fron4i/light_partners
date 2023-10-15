@@ -22,12 +22,7 @@ window.onload = () => {
 	if (document.documentElement.clientWidth < 1080) headerLogo.style.paddingLeft = lockPaddingValue;
 }
 
-window.onclick = e => {
-	console.log(e.target);  // to get the element
-	console.log(e.target.tagName);  // to get the element tag name alone
-} 
-
-$(document).on("click.ymaps-image-with-content", ".ymaps-image-with-content", function(){
+$(document).on("click.ymaps-image", ".ymaps-image", function(){
 	mapMenu.style.zIndex = '101';
 });
 

@@ -240,13 +240,6 @@
 										-o-filter: grayscale(1);
 										filter: grayscale(1);
 									}
-									.ymaps-image-with-content {
-										filter: hue-rotate(135deg);
-									}
-									.ymaps-image-with-content {
-										z-index: 999;
-										background-image: url(https://i.ibb.co/dct82kS/point.jpg);
-									}
 								</style>
 
 								<script src="https://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU"></script>
@@ -300,37 +293,170 @@
 											});
 										}
 
-										myMap.controls
-											.add("zoomControl")
-											.add("typeSelector")
-											.add("mapTools");
-										var myPlacemark = new ymaps.Placemark([
-											55.855377, 37.972816,
-										]);
-										var myPlacemark2 = new ymaps.Placemark([
-											54.79774, 38.353089,
-										]);
-										var myPlacemark3 = new ymaps.Placemark([
-											56.13375, 40.084568,
-										]);
-										var myPlacemark4 = new ymaps.Placemark([
-											55.361694, 40.839881,
-										]);
-										var myPlacemark5 = new ymaps.Placemark([
-											56.310523, 42.484772,
-										]);
-										var myPlacemark6 = new ymaps.Placemark([
-											53.258734, 49.859269,
-										]);
-										var myPlacemark7 = new ymaps.Placemark([
-											45.57617, 42,
-										]);
-										var myPlacemark8 = new ymaps.Placemark([
-											56.81117, 67.0,
-										]);
-										var myPlacemark9 = new ymaps.Placemark([
-											50.04117, 79.58,
-										]);
+										myMap.controls;
+
+										var myPlacemark = new ymaps.Placemark(
+											[55.855377, 37.972816],
+											{},
+											{
+												// Опции
+												// Необходимо указать данный тип макета.
+												iconLayout: "default#image",
+
+												// Своё изображение иконки метки.
+												iconImageHref:
+													"./img/point.svg",
+												// Размеры метки.
+												iconImageSize: [25, 35],
+												// Смещение левого верхнего угла иконки относительно
+												// её "ножки" (точки привязки).
+												iconImageOffset: [0, 0],
+											}
+										);
+										var myPlacemark2 = new ymaps.Placemark(
+											[54.79774, 38.353089],
+											{},
+											{
+												// Опции
+												// Необходимо указать данный тип макета.
+												iconLayout: "default#image",
+
+												// Своё изображение иконки метки.
+												iconImageHref:
+													"./img/point.svg",
+												// Размеры метки.
+												iconImageSize: [25, 35],
+												// Смещение левого верхнего угла иконки относительно
+												// её "ножки" (точки привязки).
+												iconImageOffset: [0, 0],
+											}
+										);
+										var myPlacemark3 = new ymaps.Placemark(
+											[56.13375, 40.084568],
+											{},
+											{
+												// Опции
+												// Необходимо указать данный тип макета.
+												iconLayout: "default#image",
+
+												// Своё изображение иконки метки.
+												iconImageHref:
+													"./img/point.svg",
+												// Размеры метки.
+												iconImageSize: [25, 35],
+												// Смещение левого верхнего угла иконки относительно
+												// её "ножки" (точки привязки).
+												iconImageOffset: [0, 0],
+											}
+										);
+										var myPlacemark4 = new ymaps.Placemark(
+											[55.361694, 40.839881],
+											{},
+											{
+												// Опции
+												// Необходимо указать данный тип макета.
+												iconLayout: "default#image",
+
+												// Своё изображение иконки метки.
+												iconImageHref:
+													"./img/point.svg",
+												// Размеры метки.
+												iconImageSize: [25, 35],
+												// Смещение левого верхнего угла иконки относительно
+												// её "ножки" (точки привязки).
+												iconImageOffset: [0, 0],
+											}
+										);
+										var myPlacemark5 = new ymaps.Placemark(
+											[56.310523, 42.484772],
+											{},
+											{
+												// Опции
+												// Необходимо указать данный тип макета.
+												iconLayout: "default#image",
+
+												// Своё изображение иконки метки.
+												iconImageHref:
+													"./img/point.svg",
+												// Размеры метки.
+												iconImageSize: [25, 35],
+												// Смещение левого верхнего угла иконки относительно
+												// её "ножки" (точки привязки).
+												iconImageOffset: [0, 0],
+											}
+										);
+										var myPlacemark6 = new ymaps.Placemark(
+											[53.258734, 49.859269],
+											{},
+											{
+												// Опции
+												// Необходимо указать данный тип макета.
+												iconLayout: "default#image",
+
+												// Своё изображение иконки метки.
+												iconImageHref:
+													"./img/point.svg",
+												// Размеры метки.
+												iconImageSize: [25, 35],
+												// Смещение левого верхнего угла иконки относительно
+												// её "ножки" (точки привязки).
+												iconImageOffset: [0, 0],
+											}
+										);
+										var myPlacemark7 = new ymaps.Placemark(
+											[45.57617, 42],
+											{},
+											{
+												// Опции
+												// Необходимо указать данный тип макета.
+												iconLayout: "default#image",
+
+												// Своё изображение иконки метки.
+												iconImageHref:
+													"./img/point.svg",
+												// Размеры метки.
+												iconImageSize: [25, 35],
+												// Смещение левого верхнего угла иконки относительно
+												// её "ножки" (точки привязки).
+												iconImageOffset: [0, 0],
+											}
+										);
+										var myPlacemark8 = new ymaps.Placemark(
+											[56.81117, 67.0],
+											{},
+											{
+												// Опции
+												// Необходимо указать данный тип макета.
+												iconLayout: "default#image",
+
+												// Своё изображение иконки метки.
+												iconImageHref:
+													"./img/point.svg",
+												// Размеры метки.
+												iconImageSize: [25, 35],
+												// Смещение левого верхнего угла иконки относительно
+												// её "ножки" (точки привязки).
+												iconImageOffset: [0, 0],
+											}
+										);
+										var myPlacemark9 = new ymaps.Placemark(
+											[50.04117, 79.58],
+											{},
+											{
+												// Опции
+												// Необходимо указать данный тип макета.
+												iconLayout: "default#image",
+
+												// Своё изображение иконки метки.
+												iconImageHref:
+													"./img/point.svg",
+												// Размеры метки.
+												iconImageSize: [25, 35],
+												// Смещение левого верхнего угла иконки относительно
+												// её "ножки" (точки привязки).
+												iconImageOffset: [0, 0],
+											}
+										);
 										myMap.geoObjects.add(myPlacemark);
 										myMap.geoObjects.add(myPlacemark2);
 										myMap.geoObjects.add(myPlacemark3);
