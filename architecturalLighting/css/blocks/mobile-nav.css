@@ -1,4 +1,40 @@
-.mobile-nav {
+.accordion-777-mobile {
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+.accordion-777-wrapper-mobile {
+	width: 100%;
+	height: 100%;
+}
+
+.header-acordion-777-mobile {
+	
+}
+.close-acordion-777-mobile {
+}
+.clos-left {
+}
+.close-filter-header-mobile {
+}
+.accordion-mobile {
+}
+.accordion-item-mobile {
+}
+.accordion-item__trigger-mobile {
+}
+.non-active-img {
+}
+.active-img {
+}
+.accordion-item__content-mobile {
+}
+.accordion-item-content-scroll-mobile {
+}
+
+
+
+.mobile-nav, .mobile-nav-2 {
 	display: none;
 	z-index: 99;
 	position: fixed;
@@ -14,9 +50,21 @@
 
 	text-align: center;
 }
-.mobile-nav.active {
+.mobile-row-2 {
+	padding: 16px 12px;
+	width: 100%;
+	height: 100%;
 	display: flex;
+} 
 
+.mobile-nav {
+	z-index: 100;
+}
+.mobile-nav-2 {
+	z-index: 2001;
+}
+.mobile-nav.active, .mobile-nav-2.active  {
+	display: flex;
 }
 .mobile-logo {
 	width: 33.33%;
