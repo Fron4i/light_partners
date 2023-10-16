@@ -249,8 +249,15 @@ margin-right: 4px;
 	text-align: left;
 	margin-bottom: 48px;
 }
-
+.accordion-777 {
+	display: none;
+	min-width: 351px;
+}
+.acordion-777-wrapper {
+	margin: 16px 12px auto;
+}
 @media (max-width: 1050px) {
+
 	.brands-header {
 		margin-bottom: 32px;
 	}

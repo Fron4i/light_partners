@@ -13,6 +13,9 @@
 .header-nav {
 	margin-left: 129px;
 }
+.adaptive {
+	width: calc(100% - 350px);
+}
 .header-nav ul {
 	display: flex;
 	font-family: 'Roboto';

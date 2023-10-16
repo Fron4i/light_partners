@@ -1,6 +1,9 @@
 html, body {
 	height: 100vh;
 }
+body {
+	display: block;
+}
 .none {
 	display: none !important;
 }
@@ -29,6 +32,13 @@ main {
 	margin: 0 auto;
 	overflow-x: hidden;
 }
+.container-main {
+	height: 100%;
+	width: 1416px;
+	padding: 0 12px;
+	margin: 0 auto;
+	overflow-x: hidden;
+}
 
 .no-scroll {
 	overflow: hidden;
@@ -36,6 +46,9 @@ main {
 
 @media (max-width: 1439px) {
 	.container {
+		width: 100%;
+	}
+	.container-main {
 		width: 100%;
 	}
 }
