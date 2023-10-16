@@ -43,7 +43,14 @@ mobileNabButton.addEventListener('click', $(function() {
 			}
 		});
 	}))
+// * Dard mode
 
+
+
+
+
+
+// * Dard mode
 
 // ! Slider
 

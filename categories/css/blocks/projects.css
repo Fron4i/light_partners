@@ -22,8 +22,6 @@
 	padding-left: 24px;
 	padding-bottom: 24px;
 	width: 25%;
-	max-width: 456px;
-	max-height: 343px;
 }
 .projects-step.p2 {
 	padding-bottom: 32px;
@@ -31,7 +29,7 @@
 .projects-img {
 	width: 100%;
 }
-.projects-step > h4{
+.projects-step > * > h4{
 	text-transform: uppercase;
 	padding-top: 16px;
 	font-weight: 400;
@@ -170,7 +168,7 @@
 	left: 91%;top: 45%;
 }
 
-@media (max-height: 1000px) {
+@media (max-width: 1000px) {
 	.projects-step {
 		width: 33.33%;
 	}
@@ -230,7 +228,7 @@
 		margin-left: 0;
 		padding-bottom: 24px;
 	}
-	.projects-step > h4 {
+	.projects-step > * > h4 {
 		font-size: 20px;
   }
 	.projects-header {
@@ -261,7 +259,7 @@
 	.projects-steps {
 		margin-left: -12px;
 	}
-	.projects-step > h4 {
+	.projects-step > * > h4 {
 		text-transform: uppercase;
 		padding-top: 0;
 		margin-top: 16px;
