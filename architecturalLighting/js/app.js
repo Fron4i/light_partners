@@ -554,36 +554,19 @@ $(document).ready(function () {
 		});
 	} else if (window.innerWidth <= 650) {
 		$(".filter-wrapper").click(function () {
-			if (lockPadding.length > 0) {
-				for (let index = 0; index < lockPadding.length; index++) {
-					const el = lockPadding[index];
-					el.style.paddingRight = lockPaddingValue;
-				}
-			}
-			//! .header-logo
-			// body.style.display = 'block';
-			headerLogo.style.paddingRight = "0px";
-			main.style.paddingRight = lockPaddingValue;
-			footer.style.paddingRight = lockPaddingValue;
 
 			$(this).toggleClass("open");
 			acordion.classList.toggle("active");
 			document.body.classList.toggle("no-scroll");
 
-			if (!mobileNabIcon.classList.contains("active")) {
-				if (lockPadding.length > 0) {
-					for (let index = 0; index < lockPadding.length; index++) {
-						const el = lockPadding[index];
-						el.style.paddingRight = "0px";
-					}
-				}
-				//! .header-logo
-				// body.style.display = 'flex';
-				main.style.paddingRight = "0px";
-				footer.style.paddingRight = "0px";
-			}
 		});
-		$(".close-acordion-777").click(function () {});
+		$(".close-acordion-777-mobile").click(function () {
+
+			$(this).toggleClass("open");
+			acordion.classList.toggle("active");
+			document.body.classList.toggle("no-scroll");
+
+		});
 	}
 });
 
@@ -599,6 +582,26 @@ $(document).ready(function () {
 		} else {
 			$(".accordion-item").removeClass("accordion-item--active");
 			parent.addClass("accordion-item--active");
+			aaa.addClass("hidden");
+			// imgA()
+		}
+
+		// $(this).next('.accordion-item__content').slideToggle(400)
+	});
+});
+
+$(document).ready(function () {
+	$(".accordion-item__trigger-mobile").click(function () {
+		const aaa = $(".accordion-item__content-mobile");
+		const parent = $(this).parent();
+
+		if (parent.hasClass("accordion-item--active-mobile")) {
+			parent.removeClass("accordion-item--active-mobile");
+			aaa.removeClass("hidden");
+			// imgA()
+		} else {
+			$(".accordion-item-mobile").removeClass("accordion-item--active-mobile");
+			parent.addClass("accordion-item--active-mobile");
 			aaa.addClass("hidden");
 			// imgA()
 		}
