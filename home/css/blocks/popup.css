@@ -85,6 +85,8 @@ body.lock {
 	padding-left: 12px;
 	font-size: 14px;
 	line-height: 16px;
+	background-color: #fff;
+	color: #212121;
 }
 input {
 	max-width: 100%;

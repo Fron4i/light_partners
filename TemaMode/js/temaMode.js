@@ -36,6 +36,15 @@ function lightIcon() {
 	$(".popup__close > img").attr("src", "../TemaMode/img/light-closs.svg");
 
 	$(".company-img-1").attr("src", "../TemaMode/img/light-devel.jpg");
+
+	$(".popup-left > img").attr("src", "../TemaMode/img/light-left.svg");
+	$(".popup-right > img").attr("src", "../TemaMode/img/light-right.svg");
+
+	$(".non-active-img").attr("src", "../TemaMode/img/light-non-active.svg");
+	$(".clos-left-mobile").attr("src", "../TemaMode/img/light-non-active.svg");
+	$(".clos-left").attr("src", "../TemaMode/img/light-non-active.svg");
+
+	$(".filter-wrapper > img").attr("src", "../TemaMode/img/light-filter.svg");
 	
 
 }
@@ -57,6 +66,15 @@ function darkIcon() {
 	$(".popup__close > img").attr("src", "../TemaMode/img/dark-closs.svg");
 
 	$(".company-img-1").attr("src", "../TemaMode/img/dark-devel-2.svg");
+
+	$(".popup-left > img").attr("src", "../TemaMode/img/dark-left.svg");
+	$(".popup-right > img").attr("src", "../TemaMode/img/dark-right.svg");
+	
+	$(".non-active-img").attr("src", "../TemaMode/img/dark-non-active.svg");
+	$(".clos-left-mobile").attr("src", "../TemaMode/img/dark-non-active.svg");
+	$(".clos-left").attr("src", "../TemaMode/img/dark-non-active.svg");
+
+	$(".filter-wrapper > img").attr("src", "../TemaMode/img/dark-filter.svg");
 
 }
 

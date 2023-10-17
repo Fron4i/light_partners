@@ -1,16 +1,42 @@
 body {
-	background-color: #313131;
-	color: #ffffff;
+	background-color: #313131 !important;
+	color: #ffffff !important;
 }
-
-.home-heading {
-	color: #212121;
-}
-
 .header {
 	background-color: #313131 !important;
 }
-
 .footer {
+	background-color: #313131 !important;
+}
+.mobile-nav {
+	background-color: #313131 !important;
+}
+#nav-icon3 span {
+	background: #ffffff !important;
+}
+
+
+
+.home-heading {
+	color: #212121 !important;
+}
+.popup {
+	background-color: #313131BF !important;
+}
+#home.popup__content {
+	background-color: #313131 !important;
+	color: #ffffff !important;
+}
+.color-text {
+	background-color: #313131 !important;
+	color: #ffffff !important;
+}
+.map-menu {
+	color: #212121 !important;
+}
+.white, .close-filter-header, .close-filter-header-mobile, .filter-wrapper {
+	color: #ffffff !important;
+}
+.accordion-777-mobile {
 	background-color: #313131 !important;
 }
