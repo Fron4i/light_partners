@@ -34,7 +34,7 @@
 .projects-img {
 	width: 100%;
 }
-.projects-step > h4{
+.projects-step > * > h4{
 	text-transform: uppercase;
 	padding-top: 16px;
 	font-weight: 400;

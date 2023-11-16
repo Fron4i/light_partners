@@ -48,6 +48,9 @@
 	}
 }
 @media (max-width: 615px) {
+	.production-step {
+		max-width: 100%;
+	}
 	.production {
 		margin: 48px 0 32px 0;
 	}

@@ -8,6 +8,12 @@
 	left: 0;
 	right: 0;
 	height: 870px;
+	z-index: 100;
+}
+.hero-slider {
+	max-height: 872px;
+	width: 100%;
+	overflow: hidden;
 }
 .hero-slider {
 	max-height: 872px;
@@ -15,6 +21,12 @@
 	overflow: hidden;
 }
 
+.overlay:hover {
+	z-index: -1;
+}
+.hero-slider .carousel-cell .inner:hover {
+	z-index: 110;
+ }
 /**/
 .hero-slider .carousel-cell {
 	width: 100%;
@@ -24,6 +36,7 @@
 	background-position: center;
 }
 .hero-slider .carousel-cell .inner {
+	z-index: 2;
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
@@ -58,27 +71,7 @@
 	width: 16px;
 	height: 16px;
 }
-@media (max-width: 600px) {
-	.hero-slider .flickity-page-dots {
-		left: 56.5%;
-		width: 40%;
-		z-index: 0;
-	}
-}
-@media (max-width: 350px) {
-	.hero-slider .flickity-page-dots {
-		bottom: 15px;
-		left: 26%;
-	}
-	.hero-slider .flickity-page-dots .dot {
-		width: 6px;
-		height: 6px;
-	}
-	.hero-slider .flickity-page-dots .dot.is-selected {
-		width: 10px;
-		height: 10px;
-	}
-}
+
 @media (max-width: 1090px) { 
 	.hero-slider {
 		width: 100%;
@@ -87,11 +80,24 @@
 		height: 700px;
 	}
 }
-@media (max-width: 376px) { 
-	.hero-slider {
-		height: 577px;
+@media (max-width: 767px) {
+	.hero-slider .carousel-cell .inner {
+		z-index: 2;
+	}
+	.overlay:active {
+		z-index: 1;
+	}
+}
+@media (max-width: 600px) {
+	.hero-slider .flickity-page-dots {
+		/* left: 56.5%; */
+		/* width: 40%; */
+		z-index: 0;
+	}
+	.hero-slider .flickity-page-dots {
+		bottom: 15px;
 	}
 	.hero-slider .carousel-cell {
-		height: 577px;
+		height: 600px;
 	}
 }

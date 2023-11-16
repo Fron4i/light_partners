@@ -9,6 +9,7 @@ const click1 = document.querySelector('.click')
 const marker = document.querySelector('.map-circle-placemark._comma._size_medium._outline')
 const mapMenu = document.querySelector('.map-menu')
 const closeMenu = document.querySelector('.close-menu')
+const mobilePoint = document.querySelector('.ymaps-image')
 
 
 const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth+ 'px'
@@ -21,6 +22,15 @@ window.onload = () => {
 	main.style.paddingTop = widthHeader;
 	if (document.documentElement.clientWidth < 1080) headerLogo.style.paddingLeft = lockPaddingValue;
 }
+
+
+
+$(document).on("mousedown touchstart", ".ymaps-image", function() {
+	mapMenu.style.zIndex = '101';
+ });
+$(document).on("mousedown touchstart", ".close-menu", function() {
+	mapMenu.style.zIndex = '-1';
+ });
 
 $(document).on("click.ymaps-image", ".ymaps-image", function(){
 	mapMenu.style.zIndex = '101';

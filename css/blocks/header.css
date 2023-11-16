@@ -5,6 +5,9 @@
 	padding: 16px 0;
 	background-color: #fff;
 }
+.header-logo-a { 
+	cursor: pointer;
+}
 .header-row {
 	display: flex;
 	align-items: center;
@@ -156,7 +159,7 @@
 		margin: auto auto;
 		text-align: center;
 	}
-	.header-logo > img {
+	.header-logo-a > img { 
 		width: 64px;
 		height: 64px;
 	}

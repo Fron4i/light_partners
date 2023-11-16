@@ -20,7 +20,8 @@
 	text-transform: uppercase;
 	margin-bottom: 24px;
 }
-.home-btn {
+.home-btn{
+	z-index: 1001 !important;
 	display: inline-block;
 	background-color: #94270F;
 }
@@ -124,12 +125,12 @@
 		padding-left: 0px;
 	}
 	.home-img-wrapper > ul > li + li {
-		padding: 24px 0;
+		padding: 12px 0;
 		flex-direction: column-reverse;
 	}
 	.home-heading {
 		font-size: 32px;
-		margin-bottom: 22px;
+		margin-bottom: 12px;
 	}
 	.home-img {
 		max-width: 353px;
